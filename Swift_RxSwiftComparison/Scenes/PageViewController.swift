@@ -37,14 +37,6 @@ extension PageViewController: UIPageViewControllerDataSource {
             }
         }
         return nil
-        
-        
-//        if let currentIndex = PageMenuDataSource.viewControllers.firstIndex(of: viewController),
-//            currentIndex > 0 {
-//            return PageMenuDataSource.viewControllers[currentIndex - 1]
-//        } else {
-//            return nil
-//        }
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {

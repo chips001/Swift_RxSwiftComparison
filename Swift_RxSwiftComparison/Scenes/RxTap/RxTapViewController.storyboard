@@ -17,13 +17,47 @@
                     <view key="view" contentMode="scaleToFill" id="rMQ-ck-de7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIy-Ri-4kI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="409"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOj-9L-pT9">
+                                <rect key="frame" x="0.0" y="453" width="414" height="409"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tiz-zX-sbh" userLabel="BaseLine">
+                                <rect key="frame" x="0.0" y="453" width="414" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="p11-WM-QSu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tiz-zX-sbh" firstAttribute="centerX" secondItem="Gc9-uv-Wus" secondAttribute="centerX" id="0uA-If-w66"/>
+                            <constraint firstItem="nIy-Ri-4kI" firstAttribute="trailing" secondItem="Gc9-uv-Wus" secondAttribute="trailing" id="3tI-3q-s9x"/>
+                            <constraint firstItem="tiz-zX-sbh" firstAttribute="top" secondItem="nIy-Ri-4kI" secondAttribute="bottom" id="5l1-aB-6nJ"/>
+                            <constraint firstItem="nIy-Ri-4kI" firstAttribute="top" secondItem="Gc9-uv-Wus" secondAttribute="top" id="KuS-gE-PN5"/>
+                            <constraint firstItem="YOj-9L-pT9" firstAttribute="top" secondItem="nIy-Ri-4kI" secondAttribute="bottom" id="OzV-nV-RHb"/>
+                            <constraint firstItem="tiz-zX-sbh" firstAttribute="width" secondItem="rMQ-ck-de7" secondAttribute="width" id="Sg0-ns-QWp"/>
+                            <constraint firstItem="YOj-9L-pT9" firstAttribute="bottom" secondItem="Gc9-uv-Wus" secondAttribute="bottom" id="VrR-rf-Uhe"/>
+                            <constraint firstItem="YOj-9L-pT9" firstAttribute="leading" secondItem="Gc9-uv-Wus" secondAttribute="leading" id="ZGe-Fc-xYT"/>
+                            <constraint firstItem="YOj-9L-pT9" firstAttribute="trailing" secondItem="Gc9-uv-Wus" secondAttribute="trailing" id="dA4-Bq-RaS"/>
+                            <constraint firstItem="nIy-Ri-4kI" firstAttribute="leading" secondItem="Gc9-uv-Wus" secondAttribute="leading" id="ie1-3p-Pus"/>
+                            <constraint firstItem="tiz-zX-sbh" firstAttribute="centerY" secondItem="Gc9-uv-Wus" secondAttribute="centerY" id="tkS-lb-SdM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Gc9-uv-Wus"/>
                     </view>
+                    <connections>
+                        <outlet property="addTargetPatternContainerView" destination="nIy-Ri-4kI" id="4nJ-T6-af5"/>
+                        <outlet property="rxPatternContainerView" destination="YOj-9L-pT9" id="FTS-2S-aki"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UMW-0C-Pbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128" y="112"/>
+            <point key="canvasLocation" x="127.53623188405798" y="111.83035714285714"/>
         </scene>
     </scenes>
 </document>

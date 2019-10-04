@@ -18,19 +18,6 @@ class ViewController: UIViewController {
         self.displayContentViewController(contentViewController: cildViewController, container: self.containerView)
     }
     
-    private func displayContentViewController(contentViewController: UIViewController, container: UIView) {
-        self.addChild(contentViewController)
-        contentViewController.view.frame = container.bounds
-        container.addSubview(contentViewController.view)
-        contentViewController.didMove(toParent: self)
-    }
-    
-    private func hideContentViewController(contentViewController: UIViewController) {
-        contentViewController.willMove(toParent: self)
-        contentViewController.view.removeFromSuperview()
-        contentViewController.removeFromParent()
-    }
-    
     @IBOutlet weak var containerView: UIView!
 }
 

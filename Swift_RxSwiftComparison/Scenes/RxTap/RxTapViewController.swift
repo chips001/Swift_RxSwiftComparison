@@ -12,5 +12,17 @@ class RxTapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.displayContentViewController(
+            contentViewController: AddTargetPatternViewController.instantiateFromStoryboard(), container: self.addTargetPatternContainerView
+        )
+        
+        self.displayContentViewController(
+            contentViewController: RxTapPatternViewController.instantiateFromStoryboard(),
+            container: self.rxPatternContainerView
+        )
     }
+    
+    @IBOutlet weak var addTargetPatternContainerView: UIView!
+    @IBOutlet weak var rxPatternContainerView: UIView!
 }

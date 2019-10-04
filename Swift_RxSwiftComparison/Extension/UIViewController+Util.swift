@@ -26,5 +26,17 @@ extension UIViewController {
         }
         return controller!
     }
-
+    
+    func displayContentViewController(contentViewController: UIViewController, container: UIView) {
+        self.addChild(contentViewController)
+        contentViewController.view.frame = container.bounds
+        container.addSubview(contentViewController.view)
+        contentViewController.didMove(toParent: self)
+    }
+    
+    func hideContentViewController(contentViewController: UIViewController) {
+        contentViewController.willMove(toParent: self)
+        contentViewController.view.removeFromSuperview()
+        contentViewController.removeFromParent()
+    }
 }

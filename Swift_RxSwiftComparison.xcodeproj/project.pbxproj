@@ -10,6 +10,10 @@
 		642BF4A92331EC3400F0D602 /* RxTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BF4A82331EC3400F0D602 /* RxTestViewController.swift */; };
 		642BF4AB2331EC4E00F0D602 /* RxTestViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642BF4AA2331EC4E00F0D602 /* RxTestViewController.storyboard */; };
 		642BF4AD2331FD5800F0D602 /* PageMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BF4AC2331FD5800F0D602 /* PageMenuDataSource.swift */; };
+		642BF4B12342B19D00F0D602 /* AddTargetPatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BF4B02342B19D00F0D602 /* AddTargetPatternViewController.swift */; };
+		642BF4B32342B1C600F0D602 /* AddTargetPatternViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642BF4B22342B1C600F0D602 /* AddTargetPatternViewController.storyboard */; };
+		647F3DA92345526D009C9011 /* RxTapPatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F3DA82345526D009C9011 /* RxTapPatternViewController.swift */; };
+		647F3DAB2345528A009C9011 /* RxTapPatternViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647F3DAA2345528A009C9011 /* RxTapPatternViewController.storyboard */; };
 		6491F4D4231DC01500DC71D8 /* RxTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6491F4D3231DC01500DC71D8 /* RxTapViewController.swift */; };
 		6491F4D6231DC03300DC71D8 /* RxTapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6491F4D5231DC03300DC71D8 /* RxTapViewController.storyboard */; };
 		64990B732310E660007B727C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64990B722310E660007B727C /* AppDelegate.swift */; };
@@ -28,6 +32,10 @@
 		642BF4A82331EC3400F0D602 /* RxTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTestViewController.swift; sourceTree = "<group>"; };
 		642BF4AA2331EC4E00F0D602 /* RxTestViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RxTestViewController.storyboard; sourceTree = "<group>"; };
 		642BF4AC2331FD5800F0D602 /* PageMenuDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageMenuDataSource.swift; sourceTree = "<group>"; };
+		642BF4B02342B19D00F0D602 /* AddTargetPatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTargetPatternViewController.swift; sourceTree = "<group>"; };
+		642BF4B22342B1C600F0D602 /* AddTargetPatternViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTargetPatternViewController.storyboard; sourceTree = "<group>"; };
+		647F3DA82345526D009C9011 /* RxTapPatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTapPatternViewController.swift; sourceTree = "<group>"; };
+		647F3DAA2345528A009C9011 /* RxTapPatternViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RxTapPatternViewController.storyboard; sourceTree = "<group>"; };
 		6491F4D3231DC01500DC71D8 /* RxTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTapViewController.swift; sourceTree = "<group>"; };
 		6491F4D5231DC03300DC71D8 /* RxTapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RxTapViewController.storyboard; sourceTree = "<group>"; };
 		64990B6F2310E660007B727C /* Swift_RxSwiftComparison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_RxSwiftComparison.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +72,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		642BF4AE2342B0F400F0D602 /* AddTargetPattern */ = {
+			isa = PBXGroup;
+			children = (
+				642BF4B02342B19D00F0D602 /* AddTargetPatternViewController.swift */,
+				642BF4B22342B1C600F0D602 /* AddTargetPatternViewController.storyboard */,
+			);
+			path = AddTargetPattern;
+			sourceTree = "<group>";
+		};
+		642BF4AF2342B11200F0D602 /* RxTapPattern */ = {
+			isa = PBXGroup;
+			children = (
+				647F3DA82345526D009C9011 /* RxTapPatternViewController.swift */,
+				647F3DAA2345528A009C9011 /* RxTapPatternViewController.storyboard */,
+			);
+			path = RxTapPattern;
+			sourceTree = "<group>";
+		};
 		6491F4D1231DBE4100DC71D8 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +106,8 @@
 		6491F4D2231DBE6E00DC71D8 /* RxTap */ = {
 			isa = PBXGroup;
 			children = (
+				642BF4AF2342B11200F0D602 /* RxTapPattern */,
+				642BF4AE2342B0F400F0D602 /* AddTargetPattern */,
 				6491F4D3231DC01500DC71D8 /* RxTapViewController.swift */,
 				6491F4D5231DC03300DC71D8 /* RxTapViewController.storyboard */,
 			);
@@ -212,8 +240,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647F3DAB2345528A009C9011 /* RxTapPatternViewController.storyboard in Resources */,
 				64990B7D2310E660007B727C /* LaunchScreen.storyboard in Resources */,
 				64990B7A2310E660007B727C /* Assets.xcassets in Resources */,
+				642BF4B32342B1C600F0D602 /* AddTargetPatternViewController.storyboard in Resources */,
 				64990B8B23148884007B727C /* ViewController.storyboard in Resources */,
 				6491F4D6231DC03300DC71D8 /* RxTapViewController.storyboard in Resources */,
 				64B1B1EA2331EAB00095F8E9 /* PageViewController.storyboard in Resources */,
@@ -273,7 +303,9 @@
 				64990B8E231489B8007B727C /* UIViewController+Util.swift in Sources */,
 				64B1B1E82331E5D60095F8E9 /* PageViewController.swift in Sources */,
 				64990B752310E660007B727C /* ViewController.swift in Sources */,
+				647F3DA92345526D009C9011 /* RxTapPatternViewController.swift in Sources */,
 				642BF4AD2331FD5800F0D602 /* PageMenuDataSource.swift in Sources */,
+				642BF4B12342B19D00F0D602 /* AddTargetPatternViewController.swift in Sources */,
 				6491F4D4231DC01500DC71D8 /* RxTapViewController.swift in Sources */,
 				642BF4A92331EC3400F0D602 /* RxTestViewController.swift in Sources */,
 				64990B732310E660007B727C /* AppDelegate.swift in Sources */,

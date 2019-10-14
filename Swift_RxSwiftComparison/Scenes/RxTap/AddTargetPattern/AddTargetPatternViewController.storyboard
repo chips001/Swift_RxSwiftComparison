@@ -98,6 +98,12 @@
                         <viewLayoutGuide key="safeArea" id="8yW-7r-ITL"/>
                     </view>
                     <size key="freeformSize" width="414" height="500"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="opX-2O-ZxC" id="oa6-Yg-8MN"/>
+                        <outlet property="addressTextField" destination="6fs-Eq-b4w" id="IAQ-Uo-wXv"/>
+                        <outlet property="nameLabel" destination="v0Y-hN-qvt" id="G1i-ql-f0P"/>
+                        <outlet property="nameTextField" destination="biq-cS-7Ao" id="aUq-Xu-Hog"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7h3-xG-91u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

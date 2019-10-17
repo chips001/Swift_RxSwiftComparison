@@ -10,12 +10,6 @@ import UIKit
 
 class AddTargetPatternViewController: UIViewController {
     
-    private let maxNameFieldSize = 10
-    private let maxAddressFieldSize = 50
-    private let limitText: (Int) -> String = {
-        return "あと\($0)文字"
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,6 +29,11 @@ class AddTargetPatternViewController: UIViewController {
         self.addressLabel.text = self.limitText(limitCount)
     }
     
+    private let maxNameFieldSize = 10
+    private let maxAddressFieldSize = 50
+    private let limitText: (Int) -> String = {
+        return "あと\($0)文字"
+    }    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressTextField: UITextField!
